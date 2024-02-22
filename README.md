@@ -15,8 +15,8 @@ To install VideoDownloaderBot, follow these steps:
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/videodownloaderbot.git
-cd videodownloaderbot
+git clone https://github.com/totekuh/novatube.git
+cd novatube
 ```
 
 Create a `.env` file inside the devops directory based on the `docker.env.example` template:
