@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  novatube:
+    container_name: novatube
+    hostname: novatube
+    restart: always
+    build:
+      context: ..
+      dockerfile: ./devops/Dockerfile
+    env_file:
+      - docker.env
