@@ -13,7 +13,7 @@ if [ ! -f "$ENV_FILE" ]; then
     exit 1
 fi
 
-docker-compose --env-file "$ENV_FILE" -f "$COMPOSE_FILE" up --build --force-recreate || {
+docker-compose --env-file "$ENV_FILE" -f "$COMPOSE_FILE" up --build --force-recreate --detach || {
   echo "Failed to run the bot with docker-compose"
   exit 1
 }
